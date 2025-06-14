@@ -1,5 +1,5 @@
 {
-  "name": "redux-simplify",
+  "name": "redux-simplify-hooks",
   "version": "1.0.0",
   "description": "Redux made simple: modern, type-safe React hooks for deeply nested state, actions, and selectors — fully compatible with Redux Toolkit and React 16.8+.",
   "main": "dist/index.js",
@@ -29,7 +29,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mbulelo-Peyi/statecraft.git"
+    "url": "https://github.com/Mbulelo-Peyi/redux-simplify-hooks.git"
   },
   "peerDependencies": {
     "@reduxjs/toolkit": "^1.0.0 || ^2.0.0",

@@ -1,9 +1,9 @@
-Excellent — let’s write a **professional `README.md`** for your package `redux-simplify`:
+Excellent — let’s write a **professional `README.md`** for your package `redux-simplify-hooks`:
 
 ---
 
 ````markdown
-# redux-simplify
+# redux-simplify-hooks
 
 > Redux made simple: modern, type-safe React hooks for deeply nested state, actions, and selectors — fully compatible with Redux Toolkit and React 16.8+.
 
@@ -11,9 +11,9 @@ Excellent — let’s write a **professional `README.md`** for your package `red
 
 ---
 
-## ✨ What is redux-simplify?
+## ✨ What is redux-simplify-hooks?
 
-**redux-simplify** is a lightweight collection of hooks that simplifies working with Redux state in React.  
+**redux-simplify-hooks** is a lightweight collection of hooks that simplifies working with Redux state in React.  
 It provides ergonomic and modern alternatives to `useSelector` and `useDispatch`, allowing you to:
 
 - Select deeply nested state using dot notation.
@@ -36,10 +36,10 @@ First install the required peer dependencies if not already installed:
 npm install react react-dom react-redux @reduxjs/toolkit
 ````
 
-Then install redux-simplify:
+Then install redux-simplify-hooks:
 
 ```bash
-npm install redux-simplify
+npm install redux-simplify-hooks
 ```
 
 ---
@@ -62,7 +62,7 @@ npm install redux-simplify
 Read nested state using dot-path notation:
 
 ```typescript
-import { useRedux } from 'redux-simplify';
+import { useRedux } from 'redux-simplify-hooks';
 
 const MyComponent = () => {
   const { state, dispatch } = useRedux('user.profile.name');
@@ -76,7 +76,7 @@ const MyComponent = () => {
 Select multiple state paths at once:
 
 ```typescript
-import { useReduxMulti } from 'redux-simplify';
+import { useReduxMulti } from 'redux-simplify-hooks';
 
 const { state } = useReduxMulti(['user.profile.name', 'counter.value']);
 
@@ -89,7 +89,7 @@ console.log(state['counter.value']);
 Read & write Redux state like React's `useState`:
 
 ```typescript
-import { useReduxState } from 'redux-simplify';
+import { useReduxState } from 'redux-simplify-hooks';
 import { counterSlice } from './counterSlice';
 
 const [count, setCount] = useReduxState('counter.value', counterSlice.actions.setCounter);
@@ -102,7 +102,7 @@ setCount(42);
 Bind Redux actions to dispatch automatically:
 
 ```typescript
-import { useBoundAction } from 'redux-simplify';
+import { useBoundAction } from 'redux-simplify-hooks';
 import { counterSlice } from './counterSlice';
 
 const incrementByAmount = useBoundAction(counterSlice.actions.incrementByAmount);
@@ -114,7 +114,7 @@ incrementByAmount(5); // dispatches action
 
 ## 🧪 Testing
 
-redux-simplify is fully tested using:
+redux-simplify-hooks is fully tested using:
 
 * Jest
 * @testing-library/react
@@ -135,7 +135,7 @@ This project is licensed under the **Apache License 2.0**.
 
 ## 💡 Motivation
 
-Redux can be powerful but verbose — **redux-simplify** aims to make Redux feel as simple as React's `useState()` without sacrificing its robustness.
+Redux can be powerful but verbose — **redux-simplify-hooks** aims to make Redux feel as simple as React's `useState()` without sacrificing its robustness.
 
 ---
 
