@@ -11,7 +11,7 @@ Excellent — let’s write a **professional `README.md`** for your package `red
 
 ---
 
-## ✨ What is redux-simplify-hooks?
+## What is redux-simplify-hooks?
 
 **redux-simplify-hooks** is a lightweight collection of hooks that simplifies working with Redux state in React.  
 It provides ergonomic and modern alternatives to `useSelector` and `useDispatch`, allowing you to:
@@ -21,14 +21,14 @@ It provides ergonomic and modern alternatives to `useSelector` and `useDispatch`
 - Bind Redux actions easily with hooks.
 - Select multiple state slices at once.
 
-✅ Fully type-safe  
-✅ Compatible with **React 16.8+** (Hooks onward)  
-✅ Compatible with **Redux Toolkit**  
-✅ Supports React 17, 18, 19+  
+Fully type-safe  
+Compatible with **React 16.8+** (Hooks onward)  
+Compatible with **Redux Toolkit**  
+Supports React 17, 18, 19+  
 
 ---
 
-## 📦 Installation
+## Installation
 
 First install the required peer dependencies if not already installed:
 
@@ -55,9 +55,9 @@ npm install redux-simplify-hooks
 
 ---
 
-## 🚀 Usage
+## Usage
 
-### 1️⃣ `useRedux()`
+### 1 `useRedux()`
 
 Read nested state using dot-path notation:
 
@@ -71,7 +71,7 @@ const MyComponent = () => {
 };
 ```
 
-### 2️⃣ `useReduxMulti()`
+### 2 `useReduxMulti()`
 
 Select multiple state paths at once:
 
@@ -84,7 +84,7 @@ console.log(state['user.profile.name']);
 console.log(state['counter.value']);
 ```
 
-### 3️⃣ `useReduxState()`
+### 3 `useReduxState()`
 
 Read & write Redux state like React's `useState`:
 
@@ -97,7 +97,7 @@ const [count, setCount] = useReduxState('counter.value', counterSlice.actions.se
 setCount(42);
 ```
 
-### 4️⃣ `useBoundAction()`
+### 4 `useBoundAction()`
 
 Bind Redux actions to dispatch automatically:
 
@@ -112,7 +112,7 @@ incrementByAmount(5); // dispatches action
 
 ---
 
-## 🧪 Testing
+## Testing
 
 redux-simplify-hooks is fully tested using:
 
@@ -125,7 +125,7 @@ npm run test
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **Apache License 2.0**.
 
@@ -133,13 +133,13 @@ This project is licensed under the **Apache License 2.0**.
 
 ---
 
-## 💡 Motivation
+## Motivation
 
 Redux can be powerful but verbose — **redux-simplify-hooks** aims to make Redux feel as simple as React's `useState()` without sacrificing its robustness.
 
 ---
 
-## 💬 Contributions
+## Contributions
 
 PRs and issues are welcome! If you want to contribute, please fork and submit a pull request.
 
