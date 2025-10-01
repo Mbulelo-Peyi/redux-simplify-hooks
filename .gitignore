@@ -38,4 +38,5 @@ logs
 *.tgz
 *.swp
 *.swo
+tests/
 .npmignore
