@@ -1,6 +1,6 @@
 {
   "name": "redux-simplify-hooks",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Redux made simple: modern, type-safe React hooks for deeply nested state, actions, and selectors — fully compatible with Redux Toolkit and React 16.8+.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

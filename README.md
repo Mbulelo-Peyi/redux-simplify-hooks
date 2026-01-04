@@ -1,7 +1,3 @@
-Excellent — let’s write a **professional `README.md`** for your package `redux-simplify-hooks`:
-
----
-
 ````markdown
 # redux-simplify-hooks
 
